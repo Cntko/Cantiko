@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding-top: 50px;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+            box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">🎮TIKO'S FAV GAMES🎮</h1>
+        <div class="game-list">
+            <div class="game-card"
+                onclick="showGameDetail('AFK JOURNEY', 'https://i.pinimg.com/736x/8c/c1/11/8cc111118212c5dc85a9ce45f46c5014.jpg', 'AFK Journey adalah game RPG idle yang menawarkan eksplorasi dunia terbuka dengan pertempuran berbasis strategi di papan grid. Sebagai sekuel AFK Arena, game ini memungkinkan pemain mengumpulkan dan meningkatkan pahlawan dari enam faksi dengan kemampuan unik. Dengan grafis bergaya buku cerita, mode permainan beragam, serta sistem progres yang tetap berjalan meskipun tidak aktif, AFK Journey menghadirkan pengalaman kasual namun tetap strategis bagi para penggemar RPG dan game idle.')">
+                <img src="https://i.pinimg.com/736x/8c/c1/11/8cc111118212c5dc85a9ce45f46c5014.jpg">
+                <div class="game-title">AFK JOURNEY</div>
+            </div>
+            <div class="game-card"
+                onclick="showGameDetail('RED DEAD REDEMPTION', 'https://i.pinimg.com/736x/b9/96/c9/b996c9df8f949224e85eb2531690ae2d.jpg', 'Red Dead Redemption adalah game aksi-petualangan berlatar di era akhir abad ke-19 hingga awal abad ke-20, game ini mengikuti perjalanan seorang koboi yang berusaha bertahan di dunia yang semakin modern. Dengan dunia terbuka yang luas, cerita emosional, serta gameplay yang realistis mencakup pertempuran, eksplorasi, dan interaksi mendalam dengan NPC, Red Dead Redemption menawarkan pengalaman imersif yang membawa pemain ke era koboi dengan detail yang luar biasa..')">
+                <img src="https://i.pinimg.com/736x/b9/96/c9/b996c9df8f949224e85eb2531690ae2d.jpg">
+                <div class="game-title">RED DEAD REDEMPTION</div>
+            </div>
+            <div class="game-card"
+                onclick="showGameDetail('LIFE IS STRANGE', 'https://i.pinimg.com/736x/e1/b4/56/e1b4566ce9dff0df2f007189639a5171.jpg', 'Life is Strange adalah game petualangan naratif episodik yang dikembangkan oleh Dontnod Entertainment dan diterbitkan oleh Square Enix. Game ini mengikuti kisah Max Caulfield, seorang siswi fotografi yang menemukan kemampuannya untuk memundurkan waktu, yang digunakannya untuk mengungkap misteri hilangnya seorang siswa di kota kecil Arcadia Bay. Dengan pilihan yang berdampak besar pada cerita, karakter yang emosional, serta atmosfer yang kuat, Life is Strange menawarkan pengalaman yang mendalam dan menggugah, di mana setiap keputusan pemain membentuk alur cerita dan akhirnya menentukan nasib karakter-karakternya.')">
+                <img src="https://i.pinimg.com/736x/e1/b4/56/e1b4566ce9dff0df2f007189639a5171.jpg">
+                <div class="game-title">LIFE IS STRANGE</div>
+            </div>
+            <div class="game-card"
+                onclick="showGameDetail('VALORANT', 'https://i.pinimg.com/736x/bf/f0/8a/bff08ad47ae648e775598f70d8bcd919.jpg', 'Valorant menarik banyak pemain karena menggabungkan gameplay FPS taktis dengan kemampuan unik setiap agen, menciptakan pengalaman yang strategis dan dinamis Perpaduan antara akurasi tembakan ala Counter-Strike dan kemampuan karakter seperti Overwatch menciptakan pengalaman yang intens dan penuh strategi.')">
+                <img src="https://i.pinimg.com/736x/bf/f0/8a/bff08ad47ae648e775598f70d8bcd919.jpg">
+                <div class="game-title">VALORANT</div>
+            </div>
+            <div class="game-card"
+                onclick="showGameDetail('THE LAST OF US 2', 'https://i.pinimg.com/736x/89/74/1d/89741d568451c12577975bf69c82d455.jpg', 'The Last of Us Part II adalah game aksi-petualangan dengan cerita emosional yang menggugah, menampilkan perjalanan penuh dendam dan kehilangan yang dialami Ellie di dunia pasca-apokaliptik. Dengan gameplay brutal dan realistis, pemain harus bertahan hidup melalui pertempuran sengit dan strategi stealth yang menegangkan. Lingkungan yang detail, karakter yang kompleks, serta grafis dan audio yang memukau menciptakan pengalaman yang imersif dan mendalam. Dikombinasikan dengan narasi yang penuh konflik moral, game ini menawarkan kisah yang mengguncang emosi dan meninggalkan kesan mendalam bagi para pemain.')">
+                <img src="https://i.pinimg.com/736x/89/74/1d/89741d568451c12577975bf69c82d455.jpg">
+                <div class="game-title">THE LAST OF US 2</div>
+            </div>
+            <div class="game-card"
+                onclick="showGameDetail('OXENFREE', 'https://i.pinimg.com/736x/d6/d9/d8/d6d9d88bbfc15e1235355a3d13d539b0.jpg', 'Oxenfree adalah game petualangan supernatural yang berfokus pada eksplorasi, teka-teki, dan percakapan berbasis pilihan. Pemain mengendalikan Alex, seorang remaja yang bersama teman-temannya tanpa sengaja membuka celah supranatural di sebuah pulau misterius. Dengan atmosfer yang mencekam, dialog yang dinamis, serta elemen horor psikologis yang kuat, Oxenfree menawarkan pengalaman naratif yang mendalam di mana setiap keputusan memengaruhi jalan cerita dan hubungan antar karakter.')">
+                <img src="https://i.pinimg.com/736x/d6/d9/d8/d6d9d88bbfc15e1235355a3d13d539b0.jpg">
+                <div class="game-title">OXENFREE</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="gameImage" src="" class="img-fluid mb-3">
+                    <p id="gameDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showGameDetail(title, image, description = 'Deskripsi tidak tersedia.') {
+            document.getElementById('gameTitle').innerText = title;
+            document.getElementById('gameImage').src = image;
+            document.getElementById('gameDescription').innerText = description;
+
+            let gameModalEl = document.getElementById('gameModal');
+            let gameModal = new bootstrap.Modal(gameModalEl);
+
+            gameModalEl.removeAttribute('aria-hidden');
+
+            gameModal.show();
+        }
+
+    </script>
+
+
+</body>
+
+</html>
